@@ -19,9 +19,10 @@
     --%>
     
     <c:set var="point" value="${param.point}"/>
-    
+    당신의 점수는 : <strong>${point}점</strong>
+    <%-- 
     # 점수: ${point} <br>
-    
+    --%>
     <c:choose>
     <c:when test="${point >=100}">
     <h3> 점수를 잘못 입력하셨습니다. </h3>
@@ -48,8 +49,7 @@
     	
     	<c:when test="${point>=60}">
     	<h3>D</h3>
-    	</c:when>
-    	
+    	</c:when>    	
     	<c:otherwise>
     	<h3>F</h3>
     	</c:otherwise>
