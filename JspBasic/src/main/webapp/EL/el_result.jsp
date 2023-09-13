@@ -17,6 +17,9 @@
 	
 	<%--
         * EL에서 데이터를 참조할 때 영역을 명시하지 않는다면
+        (page - request - session - application) 
+        가장 작은 영역부터 ~> 큰 영역까지 
+        
         page -> request
          -> session(전 영역에서 사용이 가능하지만(일정 기간 동안) 서버가 끝나면 끝)
          -> application 순서대로 검색하여 찾아내 표현합니다.
