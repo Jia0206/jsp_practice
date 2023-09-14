@@ -32,6 +32,8 @@ public class BoardVO {
 	private LocalDateTime regDate;
 	
 	public BoardVO() {} 
+	
+	
 
 	public BoardVO(String writer, String title, String content, LocalDateTime regDate) {
 		super();
@@ -79,6 +81,8 @@ public class BoardVO {
 				+ content + ", regDate=" + regDate + "]";
 	
 	}
+	
+	
 	
 
 }
